@@ -1,10 +1,9 @@
 class Solution:
     def decode_message(self, s: str, p: str) -> bool:
         m, n = len(p), len(s)
-
         # Initialize a 1D DP array
         dp = [False] * (n + 1)
-        dp[0] = True 
+        dp[0] = True
 
         for i in range(1, m + 1):
             prev_dp = dp[:]
