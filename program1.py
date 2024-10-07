@@ -8,7 +8,6 @@ class Solution:
             stack = [(x, y)]
             while stack:
                 cx, cy = stack.pop()
-                # Mark the current cell as visited
                 grid[cx][cy] = 'W'
                 
                 # Explore neighbors (up, down, left, right)
