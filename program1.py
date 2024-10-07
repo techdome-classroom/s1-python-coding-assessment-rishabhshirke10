@@ -21,7 +21,6 @@ class Solution:
             for j in range(cols):
                 # If we find a land cell ('L'), we have found a new island
                 if grid[i][j] == 'L':
-                    # Perform DFS to mark the entire island as visited
                     dfs(i, j)
                     # Increment the island count
                     island_count += 1
