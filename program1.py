@@ -1,6 +1,4 @@
-
-   
-    class Solution:
+class Solution:
         def getTotalIsles(self, grid: list[list[str]]) -> int:
         # Dimensions of the grid
         rows, cols = len(grid), len(grid[0])
