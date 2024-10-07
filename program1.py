@@ -8,19 +8,20 @@ class Solution:
             stack = [(x, y)]
             while stack:
                 cx, cy = stack.pop()
-                grid[cx][cy] = 'W'
-                
-                for nx, ny in [(cx-1, cy), (cx+1, cy), (cx, cy-1), (cx, cy+1)]:
-                    if 0 <= nx < rows and 0 <= ny < cols and grid[nx][ny] == 'L':
+                grid[cx][cy] = "W"
+
+                for nx, ny in [(cx - 1, cy), (cx + 1, cy), (cx, cy - 1), (cx, cy + 1)]:
+                    if 0 <= nx < rows and 0 <= ny < cols and grid[nx][ny] == "L":
                         stack.append((nx, ny))
+
         if not grid:
             return 0
-        
+
         island_count = 0
         for i in range(rows):
             for j in range(cols):
-                if grid[i][j] == 'L':
+                if grid[i][j] == "L":
                     dfs(i, j)
                     island_count += 1
-        
-        return grid
+
+        return island_count
