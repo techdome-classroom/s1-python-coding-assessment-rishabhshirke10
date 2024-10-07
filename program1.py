@@ -13,8 +13,6 @@ class Solution:
                 for nx, ny in [(cx-1, cy), (cx+1, cy), (cx, cy-1), (cx, cy+1)]:
                     if 0 <= nx < rows and 0 <= ny < cols and grid[nx][ny] == 'L':
                         stack.append((nx, ny))
-        
-        # If the grid is empty, return 0 islands
         if not grid:
             return 0
         
