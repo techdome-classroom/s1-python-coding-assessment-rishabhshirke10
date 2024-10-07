@@ -22,7 +22,6 @@ class Solution:
                 # If we find a land cell ('L'), we have found a new island
                 if grid[i][j] == 'L':
                     dfs(i, j)
-                    # Increment the island count
                     island_count += 1
         
         return island_count
