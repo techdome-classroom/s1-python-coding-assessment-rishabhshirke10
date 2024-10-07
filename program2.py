@@ -16,7 +16,6 @@ def decode_message( s: str, p: str) -> bool:
             if p[i - 1] == '*':
                 dp[j] = dp[j - 1] or prev_dp[j]
             elif p[i - 1] == '?' or p[i - 1] == s[j - 1]:
-                # '?' matches any single character, or exact match
                 dp[j] = prev_dp[j - 1]
             else:
                 # If no match, reset current dp[j]
