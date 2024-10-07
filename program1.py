@@ -10,7 +10,6 @@ class Solution:
                 cx, cy = stack.pop()
                 grid[cx][cy] = 'W'
                 
-                # Explore neighbors (up, down, left, right)
                 for nx, ny in [(cx-1, cy), (cx+1, cy), (cx, cy-1), (cx, cy+1)]:
                     if 0 <= nx < rows and 0 <= ny < cols and grid[nx][ny] == 'L':
                         stack.append((nx, ny))
