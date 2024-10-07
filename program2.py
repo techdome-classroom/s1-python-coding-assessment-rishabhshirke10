@@ -7,7 +7,6 @@ class Solution:
         dp[0] = True  # Empty pattern matches empty string
 
         for i in range(1, m + 1):
-            # Previous row reference
             prev_dp = dp[:]
 
             # Reset dp[0] for the current row if the pattern character is '*'
