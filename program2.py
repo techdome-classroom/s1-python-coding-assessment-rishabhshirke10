@@ -3,7 +3,7 @@ def decode_message( s: str, p: str) -> bool:
     
     # Initialize a 1D DP array
     dp = [False] * (n + 1)
-    dp[0] = True  # Empty pattern matches empty string
+    dp[0] = True 
     
     for i in range(1, m + 1):
         prev_dp = dp[:]
