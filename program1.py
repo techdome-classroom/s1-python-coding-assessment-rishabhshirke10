@@ -17,8 +17,6 @@ class Solution:
             return 0
         
         island_count = 0
-        
-        # Iterate through each cell in the grid
         for i in range(rows):
             for j in range(cols):
                 # If we find a land cell ('L'), we have found a new island
