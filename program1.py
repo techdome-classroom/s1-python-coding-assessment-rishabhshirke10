@@ -19,7 +19,6 @@ class Solution:
         island_count = 0
         for i in range(rows):
             for j in range(cols):
-                # If we find a land cell ('L'), we have found a new island
                 if grid[i][j] == 'L':
                     dfs(i, j)
                     island_count += 1
