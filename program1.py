@@ -5,7 +5,6 @@ class Solution:
 
         # Helper function for DFS traversal
         def dfs(x, y):
-            # Stack to manually handle DFS (non-recursive)
             stack = [(x, y)]
             while stack:
                 cx, cy = stack.pop()
