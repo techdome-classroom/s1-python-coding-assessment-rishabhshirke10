@@ -18,7 +18,6 @@ def decode_message( s: str, p: str) -> bool:
             elif p[i - 1] == '?' or p[i - 1] == s[j - 1]:
                 dp[j] = prev_dp[j - 1]
             else:
-                # If no match, reset current dp[j]
                 dp[j] = False
     
     return dp[n]
